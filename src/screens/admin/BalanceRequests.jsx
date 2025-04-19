@@ -22,7 +22,7 @@ export const AdminBalanceRequests = () => {
       setIsLoading(true);
       
       const response = await fetch(
-        `http://localhost:5000/api/balance/admin/requests?page=${page}&limit=10&status=${status}`,
+        `${BACKEND_URL}/balance/admin/requests?page=${page}&limit=10&status=${status}`,
         {
           method: 'GET',
           credentials: 'include',
@@ -115,7 +115,7 @@ export const AdminBalanceRequests = () => {
       setProcessingId(requestId);
       
       const response = await fetch(
-        `http://localhost:5000/api/balance/admin/requests/${requestId}`,
+        `${BACKEND_URL}/balance/admin/requests/${requestId}`,
         {
           method: 'PUT',
           credentials: 'include',
