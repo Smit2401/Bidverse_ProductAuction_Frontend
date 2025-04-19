@@ -1,1 +1,3 @@
- 
+optimization: {
+    portableRecords: true,
+}

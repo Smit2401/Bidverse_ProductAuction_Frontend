@@ -83,7 +83,6 @@ body {
  position: relative;
 }
 .regsiter .content::after {
- content: "";
  position: absolute;
  top: 0;
  left: 0;
